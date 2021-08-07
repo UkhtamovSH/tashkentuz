@@ -1,0 +1,50 @@
+#lightSlider {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+#lightSlider li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+#lightSlider img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.app_light_slider_col2_link{
+    margin: 20px 0;
+}
+.app_light_slider_col2_card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.app_light_slider_demo{
+    margin: 20px 0;
+    width:100%;
+}
+.app_light_slider_col2_card .text{
+    color: #606060;
+    font-size: 14px;
+    font-family: "Lato-Semibold", sans-serif;
+    margin-top: 10px;
+}
+.lSAction > .lSPrev {
+    background-image: url("../img/svg/arrow-left-s-line.svg")!important;
+}
+.lSAction > .lSNext {
+    background-image: url("../img/svg/arrow-right-s-line.svg")!important;
+}
+.app_light_slider_col1_info_flex{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.app_light_slider_col1_info_flex2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}

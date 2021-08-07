@@ -1,0 +1,95 @@
+/*Our Pride section start*/
+.our_pride_section{
+    padding-top: 100px;
+}
+.our_pride_text{
+    font-family: "SF-Pro-Display-Medium",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #333333;
+}
+.our_pride_text2{
+    font-family: "SF-Pro-Display-Light",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #333333;
+    width: 85%;
+    padding-top: 15px;
+}
+.our_pride_div{
+    text-align: center;
+    width: 100px;
+}
+.our_pride_col{
+    padding-bottom: 87px;
+}
+.our_pride_col_div{
+    margin-right: 20px;
+}
+.our_pride_row{
+    padding-top: 60px;
+}
+/*Our Pride section end*/
+
+
+@media (min-width: 1500px) {}
+
+@media (max-width: 1500px) and (min-width: 1200px) {}
+
+@media (max-width: 1200px) and (min-width: 992px) {}
+@media (max-width: 992px) and (min-width: 765px) {
+    .our_pride_col_div{
+        margin-right: 10px;
+    }
+    .our_pride_text2{
+        font-size: 14px;
+        width: 100%;
+        padding-top: 15px;
+    }
+    .our_pride_col{
+        padding-bottom: 30px;
+    }
+    .our_pride_row{
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 765px) and (min-width: 576px) {
+    .our_pride_col_div{
+        margin-right: 10px;
+    }
+    .our_pride_text2{
+        font-size: 14px;
+        width: 100%;
+        padding-top: 15px;
+    }
+    .our_pride_col{
+        padding-bottom: 30px;
+    }
+    .our_pride_row{
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 320px) {
+    .our_pride_col_div{
+        margin-right: 10px;
+    }
+    .our_pride_text2{
+        font-size: 14px;
+        width: 100%;
+        padding-top: 15px;
+    }
+    .our_pride_col{
+        padding-bottom: 30px;
+    }
+    .our_pride_row{
+        padding-top: 30px;
+    }
+}

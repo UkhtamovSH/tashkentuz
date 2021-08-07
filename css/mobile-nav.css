@@ -1,0 +1,133 @@
+.mobile_nav_main {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.mobile_nav_main .nav-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.45em 0.6em;
+    background-color: #456;
+    color: #fff;
+    z-index: 100;
+    cursor: pointer;
+    transition: backgroun-color 0.2s;
+}
+
+.mobile_nav_main .nav-toggle:hover {
+    background-color: #345;
+}
+
+.mobile_nav_main .nav-toggle.back-visible .nav-back {
+    opacity: 1;
+}
+
+.mobile_nav_main .nav-toggle.back-visible .nav-title {
+    transform: translateX(40px);
+}
+
+.nav-title {
+    position: absolute;
+    left: 0;
+    top: 0.8em;
+    padding-left: 0.7em;
+    transition: transform 0.3s;
+}
+
+.nav-back {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.nav-back:before,
+.nav-back:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+}
+
+.nav-back:before {
+    left: 50%;
+    width: 9px;
+    height: 9px;
+    border: 2px solid currentcolor;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+
+.nav-back:after {
+    left: 28%;
+    width: 15px;
+    height: 2px;
+    background-color: currentcolor;
+    margin-top: -1px;
+}
+
+.mobile_nav_a {
+    display: block;
+    position: relative;
+    padding: 0.7em;
+    border-bottom: 1px solid #eee;
+    color: #999;
+    text-decoration: none;
+    transition: color 0.15s, background-color 0.15s;
+}
+
+.mobile_nav_a:hover {
+    color: #333;
+    background-color: #efefef;
+}
+
+.mobile_nav_ul {
+    list-style: none;
+    padding: 45px 0 0;
+    transition: transform 0.3s;
+    background-color: #fafafa;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.mobile_nav_ul .mobile_nav_ul {
+    display: none;
+    left: 100%;
+}
+
+.mobile_nav_has_dropdown_li.has-dropdown > .mobile_nav_a {
+    padding-right: 2.5em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.mobile_nav_has_dropdown_li.has-dropdown > .mobile_nav_a:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    width: 9px;
+    height: 9px;
+    border: 1px solid currentcolor;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    transform: translateY(-90%) rotateZ(-45deg);
+    transition: transform 0.3s;
+    transform-origin: 100%;
+}
+
+.mobile_nav_has_dropdown_li.nav-dropdown-open .mobile_nav_ul {
+    display: block;
+}
